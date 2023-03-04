@@ -1,0 +1,27 @@
+.alemanha{
+  color: orange;
+  font-weight: bold;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.brasil{
+  color: rgb(250, 193, 86);
+  font-weight: italic;
+  background-color: rgb(17, 0, 255);
+  border: 1px solid rgb(6, 78, 24);
+}
+.img1{
+  width: 100px;
+  height: 100px;
+  border: 20px red solid;
+}
+.img2{
+  width: 150px;
+  height: 150px;
+  border: 20px rgb(10, 215, 252) solid;
+}
+.img3{
+  width: 200px;
+  height: 200px;
+  border: 20px rgb(0, 255, 21) solid;
+}
