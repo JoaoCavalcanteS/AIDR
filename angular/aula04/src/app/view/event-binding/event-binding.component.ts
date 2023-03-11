@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class EventBindingComponent {
   pais: string =  'alemanha';
   // brasil: string = 'brasil'
-  imagem1 = 'assets/boca.jpg';
-  imagem2 = 'assets/joselito.jpg';
-  imagem3 = 'assets/vampiro.jpg';
+  imagem1: string = 'assets/boca.jpg';
+  imagem2: string = 'assets/joselito.jpg';
+  imagem3: string = 'assets/vampiro.jpg';
 
-  img1 = 'img1';
-  img2 = 'img2';
-  img3 = 'img3';
+  img1: string = 'img1';
+  img2: string = 'img2';
+  img3: string = 'img3';
 
   imagemB = 'assets/joselito.jpg';
 
