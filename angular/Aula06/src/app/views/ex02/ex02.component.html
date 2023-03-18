@@ -1,0 +1,13 @@
+<h2>Fala o nome de um pulguento</h2>
+<input type="text" [(ngModel)]="dog">
+<button (click)="procurar(dog)">Procurar</button>
+
+
+<!-- propertyBind -->
+<img [src]="ftDog" width="400px" height="250px">
+<!-- via interpolação -->
+<img src="{{'assets/'+dog+'.jpg'}}" width="400px" height="250px">
+
+
+
+
