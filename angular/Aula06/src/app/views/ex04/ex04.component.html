@@ -1,0 +1,22 @@
+<!-- Crie 3 caixas de texto e rádios contendo as
+operações básicas. Quando valores forem
+digitados nas caixas de texto, a operação
+selecionada deve ser realizada e o resultado
+exibido na 3ª caixa -->
+<div>
+    <label for="">Digite o primeiro número:</label>
+    <input type="number" [(ngModel)]="num1"><br>
+    <label for="">Digite o primeiro número:</label>
+    <input type="number" [(ngModel)]="num2"><br>
+    <label for="">Digite o primeiro número:</label>
+    <input type="number" [(ngModel)]="num3"><br>
+</div>
+<div>
+    <b>Escolha uma operação matemática</b>
+    <br>
+    <label for="">Adição</label>
+    <input type="radio" [(ngModel)]="adicao(num1, num2, num3)">
+</div>
+
+<p>{{adicao}}</p>
+
