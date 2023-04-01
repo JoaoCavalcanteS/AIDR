@@ -9,6 +9,7 @@ import { Ex01Component } from './views/ex01/ex01.component';
 import { Ex02Component } from './views/ex02/ex02.component';
 import { Ex03Component } from './views/ex03/ex03.component';
 import { Ex04Component } from './views/ex04/ex04.component';
+import { NgifEx3Component } from './views/ngif-ex3/ngif-ex3.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Ex04Component } from './views/ex04/ex04.component';
     Ex01Component,
     Ex02Component,
     Ex03Component,
-    Ex04Component
+    Ex04Component,
+    NgifEx3Component
   ],
   imports: [
     BrowserModule,

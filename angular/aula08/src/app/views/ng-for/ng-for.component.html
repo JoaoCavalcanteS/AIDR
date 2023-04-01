@@ -1,0 +1,11 @@
+<h1>Exemplo de ng FOR</h1>
+<ol>
+  <li *ngFor="let animal of bichos">
+    {{animal}}
+  </li>
+</ol>
+
+<div *ngFor="let bicho of bichos; let i = index">
+  {{i}}
+{{bicho}}
+</div>

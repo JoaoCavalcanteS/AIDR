@@ -1,0 +1,11 @@
+<input type="number" [(ngModel)]="numero1">
+<input type="number" [(ngModel)]="numero2">
+
+<div *ngIf="numero1 && numero2">
+  <button (click)="calcular('+')">+</button>
+  <button (click)="calcular('-')">-</button>
+  <button (click)="calcular('*')">*</button>
+  <button (click)="calcular('/')">/</button>
+
+{{resultado}}
+</div>
