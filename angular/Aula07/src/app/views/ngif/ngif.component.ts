@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NgifComponent {
     ativado: boolean = false;
-    nome: string = '';
+    nome = '';
 
 
     ligaDesliga(){

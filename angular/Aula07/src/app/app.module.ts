@@ -7,15 +7,14 @@ import { AppComponent } from './app.component';
 import { NgifComponent } from './views/ngif/ngif.component';
 import { NgifEx1Component } from './views/ngif-ex1/ngif-ex1.component';
 import { NgifEx2Component } from './views/ngif-ex2/ngif-ex2.component';
-import { Ex03Component } from './views/ngif-ex03/ex03.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NgifComponent,
     NgifEx1Component,
-    NgifEx2Component,
-    Ex03Component
+    NgifEx2Component
   ],
   imports: [
     BrowserModule,
