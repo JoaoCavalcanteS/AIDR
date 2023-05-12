@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CepComponent } from './views/cep/cep.component';
 import { FormsModule } from '@angular/forms';
+import { HorasComponent } from './views/horas/horas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CepComponent
+    CepComponent,
+    HorasComponent
   ],
   imports: [
     BrowserModule,
