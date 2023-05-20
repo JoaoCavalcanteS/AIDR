@@ -8,7 +8,7 @@ import { Cliente } from '../model/cliente';
 })
 export class ClienteService {
   //Se não colocar Private, ele não envia
-  //OBSERVABLE É OPCIONAL
+  //OBSERVABLE É OPCIONAL, para fazer chamada em paralelo(fazer uma chamada e ainda continuar esperando ele)
   constructor(private http:HttpClient) { }
 
   //GET
