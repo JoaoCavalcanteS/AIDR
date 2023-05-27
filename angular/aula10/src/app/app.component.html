@@ -1,12 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <app-cliente></app-cliente>
-</body>
-</html>
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon aria-hidden="false" >
+        <span class="material-symbols-outlined">
+        accessible_forward
+        </span>
+      </mat-icon>
+    </button>
+    Angular Material
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+  <mat-sidenav-container>
+
+    <mat-sidenav  #sidenav [opened]="true" mode="push">
+      <mat-list>
+        <a mat-list-item routerLink="cliente">Cliente</a>
+        <a mat-list-item routerLink="sobre">Sobre</a>
+      </mat-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content style="min-height: calc(100vh - 64px)">
+      <mat-card>
+        <router-outlet></router-outlet>
+      </mat-card>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+

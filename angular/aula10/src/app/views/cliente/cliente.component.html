@@ -1,22 +1,34 @@
 <h1>Array de clientes consumindo um Json</h1>
-<button (click)="listar()">listar</button>
-<ul>
+<!-- <ul>
   <li *ngFor="let cliente of listaClientes ">
     {{cliente.id}}
   </li>
-</ul>
-<ul>
-  <li *ngFor="let cliente of listaClientes ">
+</ul> -->
+
+<mat-selection-list>
+  <a mat-list-item *ngFor="let cliente of listaClientes ">
     <span (click)="selecionar(cliente)" >{{cliente.nome}} </span>
-    <span (click)="remover(cliente.id)">x</span>
-  </li>
-</ul>
+    <span (click)="remover(cliente.id)" style="cursor:pointer">
+      <mat-icon>
+        delete
+      </mat-icon>
+    </span>
+  </a>
+</mat-selection-list>
+
 <div>
-  <input type="text" [(ngModel)]="cliente.nome">
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="cliente.nome" placeholder="nome">
+  </mat-form-field>
+
   <br><br>
-  <input type="text" [(ngModel)]="cliente.cpf">
+
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="cliente.cpf" placeholder="cpf" MIN="11" max="11">
+  </mat-form-field>
+
   <br><br>
-  <button (click)="cancelar()">cancelar</button>
-  <button (click)="inserir()">Salvar</button>
+  <button mat-button (click)="cancelar()">cancelar</button>
+  <button mat-flat-button color="primary" (click)="inserir()">Salvar</button>
 </div>
 

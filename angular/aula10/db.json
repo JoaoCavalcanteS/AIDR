@@ -1,0 +1,31 @@
+{
+  "cliente": [
+    {
+      "id": 2,
+      "nome": "Joao",
+      "cpf": "cs"
+    },
+    {
+      "id": 3,
+      "nome": "CAROLLLLLL",
+      "cpf": "348238824Y2989"
+    },
+    {
+      "id": 5,
+      "nome": "dasdasd",
+      "cpf": "123123123123123123"
+    },
+    {
+      "id": 6,
+      "nome": "safada",
+      "cpf": "232323232"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Lasanha",
+      "codigo": 384939890,
+      "tipo": "massas"
+    }
+  ]
+}
